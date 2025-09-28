@@ -21,6 +21,11 @@ USER appuser
 # Exponer el puerto 8000 (estándar para FastAPI)
 EXPOSE 8000
 
+# Variables por defecto para puerto y workers (se pueden sobrescribir en runtime)
+ENV PORT=8000 \
+    WORKERS=1
+
 # Comando para ejecutar la aplicación
 # Usar uvicorn con configuraciones optimizadas para producción
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "1"]
+# Ejecutar Uvicorn respetando el puerto inyectado por la plataforma y pasando proxy headers
+CMD ["sh", "-c", "uvicorn main:app --host 0.0.0.0 --port ${PORT} --workers ${WORKERS} --proxy-headers"]
