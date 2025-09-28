@@ -1,0 +1,39 @@
+# Archivos de Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de Git
+.git
+.gitignore
+
+# Archivos de desarrollo
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Archivos de VS Code
+.vscode/
+
+# Archivos temporales
+*.tmp
+*.temp
+*.log
+
+# Node modules (si los hubiera)
+node_modules/
+
+# Archivos de Docker
+Dockerfile
+.dockerignore
