@@ -57,7 +57,7 @@ def read_root():
 def consultar_disponibilidad():
     """Consultar todas las franjas horarias (disponibles y ocupadas)"""
     return {
-        "mensaje": "Consulta de disponibilidad realizada",
+        "mensaje": "Consulta de disponibilidad realizadaaaaaa",
         "total_franjas": len(franjas_disponibles),
         "franjas": franjas_disponibles
     }
