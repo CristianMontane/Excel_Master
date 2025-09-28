@@ -23,7 +23,7 @@ EXPOSE 8000
 
 # Variables por defecto para puerto y workers (se pueden sobrescribir en runtime)
 ENV PORT=8000 \
-    WORKERS=1
+    WORKERS=16
 
 # Comando para ejecutar la aplicación
 # Usar uvicorn con configuraciones optimizadas para producción
