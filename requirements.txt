@@ -1,14 +1,17 @@
-# FastAPI con dependencias estándar (incluye uvicorn, pydantic, etc.)
+# FastAPI con dependencias estándar
 fastapi[standard]==0.115.0
 
-# Servidor ASGI de alto rendimiento (ya incluido en fastapi[standard] pero especificado para claridad)
+# Servidor ASGI de alto rendimiento  
 uvicorn[standard]==0.32.0
 
-# Validación de datos (ya incluido en fastapi[standard])
+# Validación de datos
 pydantic==2.9.2
 
-# Para manejo de formularios multipart (ya incluido en fastapi[standard])
+# Para manejo de formularios multipart
 python-multipart==0.0.12
 
-# Opcional: Para mejor rendimiento JSON
+# Para mejor rendimiento JSON
 orjson==3.10.7
+
+# Dependencias adicionales para despliegue
+gunicorn==21.2.0
